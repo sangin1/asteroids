@@ -671,7 +671,7 @@ Asteroid = function () {
   this.collision = function (other) {
     SFX.explosion();
     if (other.name == "bullet") Game.score += 120 / this.scale;
-    this.scale /= 3;
+    this.scale /= 2;
     if (this.scale > 0.5) {
       // break into fragments
       for (var i = 0; i < 3; i++) {
